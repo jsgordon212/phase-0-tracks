@@ -1,0 +1,81 @@
+section#contact-info{
+
+	font-size: .8em;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid black;
+	padding: 20px;
+	}
+
+h1#resume-title {
+  margin-top: 70px;
+}
+
+section#contact-info p {
+  display: inline;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 2px solid black;
+}
+
+/* We use the last-of-type selector
+to avoid the appearance of an extra
+border. */
+
+section#contact-info p:last-of-type {
+  border-right: none;
+}
+
+.job{
+
+	background-color: #e9e5dc;
+	border-radius: 25px;
+	padding: 1px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.accomplishments li{
+
+	font-size: .8em;
+}
+
+/*1.What does the "Cascading" part of Cascading Style Sheets mean? 
+When there is a conflict between two CSS rules that select the same element,
+how does your browser decide which rule to use?
+
+	The Cascading part means that since more than one rule from a stylesheet could be applied,
+	it follows a pattern of going from general rules to specific rules, where the most specific one
+	is applied.
+
+2.Find a cheat sheet or quick guide on CSS selectors, or refer to a cheat sheet you've already bookmarked.
+ What is a pseudoselector? Write a CSS rule that uses a pseudoselector.
+
+ 	A pseudoselector uses a made-up word or term, meaning not an actual tag, to define rule to be used when
+ 	that selector is used as an id or class in html.
+
+ 	example: 
+
+ 	fake-selector{
+
+ 		font-size: 120000000000em;
+ 	}
+
+3.How can you use CSS to select the child element of another element (for instance, a section inside another
+ section, or an li inside a ul but not inside an ol)? Add an example of such a rule in your CSS.
+
+	Using the '>' char in between the two elements (left being the parent right being the child) you can apply
+	a rule to every element on the right, only when it is the child of the left element.
+
+	example:
+
+	ul > li {
+
+		font-size: 1.2em;
+	}
+
+	this will change the font size of any li element only if it is part of an ul.*/
