@@ -1,0 +1,30 @@
+
+.cowboy-octopus {
+	position: relative;
+	top: 25%;
+	left: 25%;
+	margin-top: auto;
+	margin-left: auto;
+	padding-top: 100px;
+}
+
+#hat {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+		}
+
+#octopus {
+	position: absolute;
+}
+
+#glasses {
+	position: absolute;
+	padding-left: 40px;
+	padding-top: 100px;
+	z-index: 1
+
+
+}
+
+
