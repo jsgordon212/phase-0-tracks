@@ -1,0 +1,36 @@
+-determine which number floor you need to go to
+-if the floor number is higher than the curent floor
+	-choose the up button
+-if it is lower 
+	-choose the down button
+-enter the elevator
+-locate the top most button and scan downwards until the button reads the same number
+as the floor you need to go to.
+	-if there are multiple columns
+		- return to the top of the next column 
+		- repeat until the button matches the floor your're going to
+
+
+
+#Morning Routine
+
+- get out of bed
+- if not wearing clothes
+	-put on clothes
+- else go to the bathroom
+- After using the bathroom go to the kitchen
+- locate cereal
+- pour cereal into a bowl and add milk
+	-if milk is empty
+		-eat cereal with hands
+	-if cereal box is empty
+		-drink milk out of carton
+	-else
+		-give up on breakfast
+-return to bathroom
+-shower and brush teeth
+-leave for work
+	-if you had breakfast
+		-go straight to work
+	-else
+		-stop at donut shop
