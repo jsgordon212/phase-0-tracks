@@ -39,12 +39,12 @@ class Santa
 end
 
 
-genders = ["genderless", "female", "male", "female", "N/A"]
-ethnicities = ["Orc", "Night Elf", "Undead", "Human", "N/A"]
+genders = ["genderless", "male", "female", "N/A"]
+ethnicities = ["Orc", "Night Elf", "Undead", "Human", "Dwarf", "Goblin", "N/A"]
 ages = (0..140).to_a
 
 
-10000.times do |i|
+10000.times do 
   
   santa = Santa.new(genders.sample, ethnicities.sample)
   santa.age = ages.sample
