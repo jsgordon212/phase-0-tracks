@@ -44,7 +44,7 @@ my_puppy.sit
 
 class Megaman
 
-	def initilizer
+	def initialize
 		puts "Sizzling circuits!"
 	end
 
