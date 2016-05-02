@@ -68,3 +68,21 @@ qty_change(shopping_list, "ice cream", 1)
 
 print_list(shopping_list)
 
+#What did you learn about pseudocode from working on this challenge?
+# it can be helpful in keeping focused on what you're trying to accomplish.
+
+#What are the tradeoffs of using arrays and hashes for this challenge?
+# We found a hash to be better suited for the task since can associate the two parameters.
+
+#What does a method return?
+# it will return the last line of code in the block. 
+
+#What kind of things can you pass into methods as arguments?
+# Any data type like strings, integers, arrays..etc
+
+#How can you pass information between methods?
+# You can have a method take in the return value of another method as one of its arguments.
+
+#What concepts were solidified in this challenge, and what concepts are still confusing?
+# I got a better feel for return values, but still just a tad confused about passing
+# information between methods without global variables.
