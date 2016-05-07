@@ -4,9 +4,12 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# links the state_data.rb file with this file which is located in the same directory
+# reqiure will look in the Ruby library first versus the require_relative which will look in the same directory first
+
 require_relative 'state_data'
+
+# initializes our three instance variables with 3 arguments
 
 class VirusPredictor
 
@@ -23,7 +26,11 @@ class VirusPredictor
 
   private
 
+# take in three arguments and assign a variable to a calculation acourding to the size of the population density
+# it will output a string that includes the state argumnet and a variable based on the calculation
+
   def predicted_deaths
+
     # predicted deaths is solely based on population density
     #if @population_density >= 200
     #  number_of_deaths = (@population * 0.4).floor
@@ -38,7 +45,6 @@ class VirusPredictor
    # end
 
     number_of_deaths = (@population * 0.05).floor
-
     number_of_deaths = (@population * 0.4).floor if @population_density >= 200
     number_of_deaths = (@population * 0.3).floor if @population_density >= 150
     number_of_deaths = (@population * 0.3).floor if @population_density >= 100
@@ -48,6 +54,8 @@ class VirusPredictor
 
   end
 
+# takes two argumnets and increases the speed variable accourding to the population_density and outputs a string with the speed variable
+  
   def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
@@ -66,7 +74,6 @@ class VirusPredictor
   #end
 
   speed = 2.5
-
   speed = 2 if @population_density >= 50
   speed = 1.5 if @population_density >= 100
   speed = 1 if @population_density >= 150
