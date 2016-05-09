@@ -10,11 +10,11 @@ function longestWord(wordList){
 
 	var longestWord = wordList[0];
 
-	for(var i = 0; i < wordList.length-1; i++){
+	for(var i = 1 ; i < wordList.length-1; i++){
 
-		if(longestWord.length < wordList[i + 1].length){
+		if(longestWord.length < wordList[i].length){
 
-			longestWord = wordList[i + 1];
+			longestWord = wordList[i];
 		} 
 	}
 
