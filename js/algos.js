@@ -81,7 +81,7 @@ function randomData(array_size){
 
 		for(var j = 0; j < Math.floor((Math.random() * 10) + 1); j++){
 
-			randWord = randWord + alphabet[Math.floor((Math.random() * 25) + 1)];
+			randWord = randWord + alphabet[Math.floor((Math.random() * 26))];
 
 		}
 
