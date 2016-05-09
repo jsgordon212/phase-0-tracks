@@ -59,6 +59,40 @@ function commonPair(obj1, obj2){
 }
 
 
+/*random data method:
+Set a variable equal to the alphabet as a string and a variable equal to an empty array.
+Use a For loop as many times as the inter passed in the argument.
+Set a variable to an empty string.
+The inside For loop will iterate randomly between 1-10 times.
+The blank variable will equal itself plus a random character from the alphabet string.
+The completed string will be added to the empty array and the variables reset starting the
+next loop.
+After all loops are finished the array is returned.
+*/
+
+function randomData(array_size){
+
+	var alphabet = "abcdefghijklmnopqrstuvwxyz";
+	var output = [];
+
+	for(var i = 0; i < array_size; i++){
+
+		var randWord = "";
+
+		for(var j = 0; j < Math.floor((Math.random() * 10) + 1); j++){
+
+			randWord = randWord + alphabet[randChar = Math.floor((Math.random() * 25) + 1)];
+
+		}
+
+		output.push(randWord);
+	}
+
+	return output;
+
+}
+
+
 
 /*var fruits = ["Banana", "Apple", "Mango", "pear", "the longest fruit ever"];
 
@@ -72,4 +106,10 @@ var x = {name: "Steven", weight: 154, age: 53};
 var y = {name: "Stevn", age: 53, weight: 134, height: 6};
 
 
-console.log(commonPair(x, y));
+for(var i = 0; i < 10; i++){
+
+	my_array = randomData(Math.floor((Math.random() * 10) + 1));
+	console.log(my_array);
+	console.log(longestWord(my_array));
+
+}
