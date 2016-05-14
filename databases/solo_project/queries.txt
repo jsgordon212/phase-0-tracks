@@ -1,0 +1,77 @@
+1. SELECT * FROM people
+
+1|Bob Doe|47|true|2
+2|Jane Doe|45|true|2
+3|Jimmy Fake|23|false|3
+4|Karen Notreal|34|false|4
+5|Peter Madeup|16|false|1
+6|John Dontexist|28|true|1
+7|Elaine Fabricated|24|true|4
+8|Howard Pretend|68|false|3
+9|Molly Pseudo|24|true|3
+10|Randy Ficticious|54|false|2
+
+
+2. UPDATE people SET name='Jimbo Fake' WHERE name='Jimmy Fake'
+
+1|Bob Doe|47|true|2
+2|Jane Doe|45|true|2
+3|Jimbo Fake|23|false|3
+4|Karen Notreal|34|false|4
+5|Peter Madeup|16|false|1
+6|John Dontexist|28|true|1
+7|Elaine Fabricated|24|true|4
+8|Howard Pretend|68|false|3
+9|Molly Pseudo|24|true|3
+10|Randy Ficticious|54|false|2
+
+3. SELECT * FROM people, locations WHERE people.location=locations.id
+
+1|Bob Doe|47|true|2|2|San Francisco|94101|CA
+2|Jane Doe|45|true|2|2|San Francisco|94101|CA
+3|Jimbo Fake|23|false|3|3|Chicago|60290|IL
+4|Karen Notreal|34|false|4|4|Los Angeles|90001|CA
+5|Peter Madeup|16|false|1|1|New York|10001|NY
+6|John Dontexist|28|true|1|1|New York|10001|NY
+7|Elaine Fabricated|24|true|4|4|Los Angeles|90001|CA
+8|Howard Pretend|68|false|3|3|Chicago|60290|IL
+9|Molly Pseudo|24|true|3|3|Chicago|60290|IL
+10|Randy Ficticious|54|false|2|2|San Francisco|94101|CA
+
+4. SELECT people.name, locations.city FROM people, locations WHERE people.location=locations.id
+
+Bob Doe|San Francisco
+Jane Doe|San Francisco
+Jimbo Fake|Chicago
+Karen Notreal|Los Angeles
+Peter Madeup|New York
+John Dontexist|New York
+Elaine Fabricated|Los Angeles
+Howard Pretend|Chicago
+Molly Pseudo|Chicago
+Randy Ficticious|San Francisco
+
+5. DELETE FROM people WHERE age=16
+
+1|Bob Doe|47|true|2
+2|Jane Doe|45|true|2
+3|Jimbo Fake|23|false|3
+4|Karen Notreal|34|false|4
+6|John Dontexist|28|true|1
+7|Elaine Fabricated|24|true|4
+8|Howard Pretend|68|false|3
+9|Molly Pseudo|24|true|3
+10|Randy Ficticious|54|false|2
+
+6. SELECT people.name, people.age, people.employed, people.location FROM people
+JOIN locations ON people.location=locations.id
+
+Bob Doe|47|true|2
+Jane Doe|45|true|2
+Jimbo Fake|23|false|3
+Karen Notreal|34|false|4
+John Dontexist|28|true|1
+Elaine Fabricated|24|true|4
+Howard Pretend|68|false|3
+Molly Pseudo|24|true|3
+Randy Ficticious|54|false|2
