@@ -1,0 +1,22 @@
+SELECT * FROM users JOIN reviews ON reviews.user_id=users.id JOIN businesses ON reviews.business_id=businesses.id
+
+4|Barney|Gumble|1|5|Great Beer!|1|4|1|Moes Tavern
+1|Homer|Simpson|2|1|Stupid Employees|3|1|3|The Leftorium
+9|Kent|Brockman|3|2|At least it never closes|10|9|10|Kwik-e-Mart
+
+
+
+SELECT * FROM users JOIN reviews ON reviews.user_id=users.id
+JOIN businesses ON reviews.business_id=businesses.id WHERE businesses.id=1
+
+4|Barney|Gumble|1|5|Great Beer!|1|4|1|Moes Tavern
+
+
+SELECT users.first_name, users.last_name, stars, comment, name FROM users 
+JOIN reviews ON users.id=reviews.user_id 
+JOIN businesses ON reviews.business_id=businesses.id
+
+
+Barney|Gumble|5|Great Beer!|Moes Tavern
+Homer|Simpson|1|Stupid Employees|The Leftorium
+Kent|Brockman|2|At least it never closes|Kwik-e-Mart
